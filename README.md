@@ -28,11 +28,11 @@ cd FinderCut
 ./scripts/install.sh
 ```
 
-The script builds the app, copies it to `/Applications`, and opens it. When macOS asks, grant **Accessibility** access in System Settings → Privacy & Security → Accessibility. FinderCut picks up the permission on its own, so you don't need to relaunch it.
+The script builds the app, moves it to `/Applications`, and opens it. When macOS asks, grant **Accessibility** access in System Settings → Privacy & Security → Accessibility. FinderCut picks up the permission on its own, so you don't need to relaunch it.
 
 Use **Launch at Login** in the menu bar menu to start it automatically.
 
-To build without installing, run `./scripts/build.sh`. The app goes to `build/FinderCut.app`.
+To build without installing, run `./scripts/build.sh`. The app goes to `build/FinderCut.app`, where Spotlight lists it as a second copy until you install or delete it.
 
 ### About rebuilding
 
